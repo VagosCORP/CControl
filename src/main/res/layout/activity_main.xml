@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vagoscorp.ccontrol.MainActivity" >
+
+    <SurfaceView
+        android:id="@+id/acel"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3" />
+
+    <TableLayout
+        android:id="@+id/TableLayout1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="6" >
+
+        <SurfaceView
+            android:id="@+id/incli"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="@string/hello_world" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="@string/hello_world" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="@string/hello_world" />
+
+        <ToggleButton
+            android:id="@+id/turbo"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:onClick="turbo"
+            android:text="@string/Turbo" />
+    </TableLayout>
+
+    <Button
+        android:id="@+id/freno"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:text="@string/Freno" />
+
+</LinearLayout>
